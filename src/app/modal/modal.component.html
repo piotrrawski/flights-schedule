@@ -1,0 +1,24 @@
+<div class = "modal-focus" *ngIf="flight">
+  <div class = "modal-container"  *ngIf="!showHide">
+
+    <div class = "modal-header">
+      <div class ="rows-container">
+        <div>{{flight.flightNumber | uppercase}} Registration</div>
+        <div>{{flight.scheduledDate | date:"dd/MM/yy"}} - {{flight.scheduledDate | date:"hh:mm"}}</div>
+      </div>
+      <div class="modal-close" (click) = "showHide=true" (click)="refresh()">&times;</div>
+    </div>
+
+    <div class = "modal-center">
+      <label>Registration<br />
+        <input type="text" placeholder={{flight.registration}}/>
+      </label>
+    </div>
+
+    <div class = "modal-footer">
+      <div class="modal-cancel" (click) = "showHide=true" (click)="refresh()">cancel</div><div class="modal-save">save</div>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+<div class ="container">
+  <div *ngFor="let flight of flights" class = "row-container">
+    <div class = "row-cell">{{flight.flightNumber}}</div>
+    <div class = "row-cell">{{flight.scheduledDate | date:"dd/MM/yy"}}</div>
+    <div class = "row-cell">{{flight.scheduledDate | date:"hh:mm"}}</div>
+    <div class = "row-cell">{{flight.originDestination}}</div>
+    <div class = "row-cell"[class.selected]="flight === selectedFlight"
+         (click)="onSelect(flight)">
+      <p *ngIf="flight.registration === '' || flight.registration === null" >...........</p>
+      <p *ngIf="flight.registration !== '' && flight.registration !== null">{{flight.registration}}</p>
+    </div>
+  </div>
+
+  <app-modal [flight]="selectedFlight"></app-modal>
+
+</div>

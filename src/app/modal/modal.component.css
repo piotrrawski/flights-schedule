@@ -1,0 +1,117 @@
+.modal-focus {
+  width: 100%;
+  height: 2000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: -45px;
+  position: absolute;
+}
+
+.modal-container {
+  box-sizing: border-box;
+  width: 359px;
+  height: 230px;
+  margin-left: 33%;
+  display: inline-block;
+  background-color: #f0f0f0;
+  font-family: "Source Sans Pro";
+  position: absolute;
+}
+
+.modal-header {
+  box-sizing: border-box;
+  height: 61px;
+  background-color: #f0f0f0;
+  color: #00000;
+  padding-left: 75px;
+  padding-right: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rows-container {
+  box-sizing: border-box;
+  height: 61px;
+  padding-top: 14px;
+}
+
+.modal-close {
+  font-size: 2.5rem;
+  display: flex;
+  align-self: center;
+}
+
+.rows-container > div:first-child {
+  box-sizing: border-box;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.rows-container > div:last-child {
+  box-sizing: border-box;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.modal-center {
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  width: 351px;
+  height: 108px;
+  margin: 0 4px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 17.5px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  box-sizing: border-box;
+  height: 37px;
+  width: 301px;
+  border: solid 2px #d8d8d8;
+  font-size: 14px;
+  font-weight: bold;
+  outline-color: #18abf4;
+}
+
+.modal-footer {
+  box-sizing: border-box;
+  background-color: #f0f0f0 ;
+  width: 359px;
+  height: 61px;
+  padding-left: 49px;
+  padding-right: 49px;
+  padding-top: 11px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-cancel{
+  box-sizing: border-box;
+  border: 2px solid #18abf4;
+  font-size: 14px;
+  line-height: 40px;
+  margin-right: 9px;
+  width: 122px;
+  height: 40px;
+  color: #18abf4;
+  display: inline-block;
+}
+
+.modal-save {
+  box-sizing: border-box;
+  background-color: #52c07f;
+  border: 2px solid #18abf4;
+  font-size: 14px;
+  line-height: 40px;
+  width: 122px;
+  height: 40px;
+  color: white;
+  display: inline-block;
+}
