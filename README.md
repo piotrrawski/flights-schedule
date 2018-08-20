@@ -1,4 +1,7 @@
-# AngularFlightSchedules
+https://piotrrawski.github.io/flights-schedule/
+# AngularFlightSchedules by Piotr Rawski
+
+## Contact me: www.linkedin.com/in/piotr-rawski
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
